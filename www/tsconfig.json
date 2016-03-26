@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "ES6",
+    "noImplicitAny": true,
+    "pretty": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./build/"
+  }
+}
