@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Jonny <jonny.covert@gmail.com>"]
 
 [dependencies]
+
+[dependencies.nickel]
+version = "*"

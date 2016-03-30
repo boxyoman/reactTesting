@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "module": "es2015",
     "target": "ES6",
+    "jsx": "preserve",
     "noImplicitAny": true,
     "pretty": true,
     "removeComments": true,
-    "preserveConstEnums": true,
-    "outDir": "./build/"
-  }
+    "preserveConstEnums": true
+  },
+  "exclude": ["node_modules", "server"]
 }
