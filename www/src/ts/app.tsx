@@ -1,5 +1,9 @@
-import { Greetings } from "./test"
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
-import * as React from 'react';
+import Hello from "./test"
 
-document.getElementById('test').innerText = Greetings.greet("Jonny");
+ReactDOM.render(
+  <Hello name="Willson" />,
+  document.getElementById("test")
+);

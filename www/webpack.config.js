@@ -9,7 +9,7 @@ module.exports = {
   module: {
     loaders: [
       { 
-        test: /\.ts/, 
+        test: /\.tsx?$/, 
         loader: 'babel-loader?presets[]=es2015!ts-loader',
         exclude: /node_modules/
       }
