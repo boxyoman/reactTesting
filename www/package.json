@@ -8,7 +8,7 @@
   "build": "webpack",
   "author": "Jonathan Covert",
   "dependencies": {
-    "react": "^0.13.3",
+    "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
   "devDependencies": {

@@ -4,7 +4,6 @@
     "jsx": "react",
     "noImplicitAny": true,
     "pretty": true,
-    "removeComments": true,
     "preserveConstEnums": true
   },
   "exclude": [
