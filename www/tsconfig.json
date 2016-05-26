@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "jsx": "preserve",
+    "jsx": "react",
     "noImplicitAny": true,
     "pretty": true,
     "removeComments": true,
     "preserveConstEnums": true
   },
-  "exclude": ["node_modules", "server"]
+  "exclude": [
+    "node_modules",
+    "server"
+  ]
 }
