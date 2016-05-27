@@ -27,7 +27,7 @@ class RAButton extends React.Component<ButtonProps, ButtonState> {
     return (
       <div className={ this.state.style }
            onClick={ e => this.props.onClick(e) }>
-        Hello
+        {this.props.children}
       </div>
     );
   }

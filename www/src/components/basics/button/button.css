@@ -19,6 +19,9 @@
   font-weight: 500;
   text-transform: none;
 }
+.green:hover{
+  background: #4cc158;
+}
 .red{
   composes: btn;
   background: #f04511;
@@ -27,6 +30,9 @@
   font-weight: 500;
   text-transform: none;
 }
+.red:hover{
+  background: #c2370c;
+}
 .grey{
   composes: btn;
   background: #ccc;
@@ -34,4 +40,7 @@
   font-size: 1em;
   font-weight: 500;
   text-transform: none;
+}
+.grey:hover{
+  background: #b3b3b3;
 }
