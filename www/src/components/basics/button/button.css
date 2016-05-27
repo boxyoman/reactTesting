@@ -1,0 +1,21 @@
+.btn{
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  padding: 6px 20px 5px;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s linear;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.green{
+  composes: btn;
+  background: #72ce7b;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: none;
+}

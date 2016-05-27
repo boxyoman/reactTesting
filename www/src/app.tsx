@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import Hello from "./test"
+import RAButton from "./components/basics/button/button"
 
 ReactDOM.render(
-  <Hello name="Willson" />,
+  <RAButton onClick={ e => alert("test") } />,
   document.getElementById("test")
 );
