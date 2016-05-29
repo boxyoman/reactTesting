@@ -6,26 +6,20 @@ interface ButtonProps {
   onClick: React.EventHandler<React.MouseEvent>;
 }
 
-interface ButtonState {
-  style: any
-}
-
-class RAButton extends React.Component<ButtonProps, ButtonState> {
+class RAButton extends React.Component<ButtonProps, {}> {
+  private style :any;
   constructor(props: ButtonProps){
     super(props);
-    var style:any = styles.grey;
+    this.style = styles.grey;
     if(props.color == "Green"){
-      style = styles.green;
+      this.style = styles.green;
     }else if(props.color == "Red"){
-      style = styles.red;
-    }
-    this.state = {
-      style: style
+      this.style = styles.red;
     }
   }
   render() {
     return (
-      <div className={ this.state.style }
+      <div className={ this.style }
            onClick={ e => this.props.onClick(e) }>
         {this.props.children}
       </div>
