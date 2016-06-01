@@ -1,13 +1,11 @@
 import Actions from '../constants'
-interface topState {
-  number: number
-}
+import topState from '../state/'
 
 interface IActions{
   type: Actions
 }
 
-const reducer = (state: topState = {number:0}, action: IActions) =>{
+const reducer = (state: topState = new topState(), action: IActions) =>{
   switch(action.type){
   case Actions.Increase:
     return {

@@ -1,7 +1,8 @@
 import * as React from "react";
-import RAButton from "./basics/button/"
+import RAButton from './basics/button/index.tsx'
 import { connect } from 'react-redux'
 import {increase, decrease} from '../actions/'
+import topState from '../state'
 
 interface HelloProps{
   number: number,
@@ -21,7 +22,7 @@ class Hello extends React.Component<HelloProps, {}> {
   }
 }
 
-const mapStateToProps = (state:any) => {
+const mapStateToProps = (state:topState) => {
   return {
     number: state.number
   }
