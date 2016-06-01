@@ -1,8 +1,10 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {  
-  entry: './src/app.tsx',
+  entry: [
+    './src/app.tsx'
+  ],
   output: {
     filename: 'build/js/app.js'
   },
@@ -13,7 +15,11 @@ module.exports = {
     loaders: [
       { 
         test: /\.tsx?$/, 
-        loader: 'babel-loader!ts-loader',
+        loaders: [
+          'react-hot',
+          'babel-loader',
+          'ts-loader'
+        ],
         exclude: /node_modules/
       },
       {
@@ -28,6 +34,6 @@ module.exports = {
     require('autoprefixer')
   ],
   plugins: [
-    new ExtractTextPlugin("build/styles.css")
+    new ExtractTextPlugin("build/styles.css"),
   ]
 };

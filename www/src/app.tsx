@@ -1,11 +1,16 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as React from 'react';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
-import RAButton from "./components/basics/button/button"
+import VisibleHello from './components/test.tsx'
+import reducer from './reducers/index.tsx'
 
-ReactDOM.render(
-  <RAButton color="Red" onClick={ e => alert("test") }>
-    Testing
-  </RAButton>,
+let store = createStore(reducer);
+
+render(
+  <Provider store={store}>
+      <VisibleHello />
+  </Provider>,
   document.getElementById("test")
 );
