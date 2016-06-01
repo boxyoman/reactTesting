@@ -3,14 +3,14 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-import VisibleHello from './components/test.tsx'
+import VisibleCounter from './components/counter.tsx'
 import reducer from './reducers/index.tsx'
 
 let store = createStore(reducer);
 
 render(
   <Provider store={store}>
-      <VisibleHello />
+      <VisibleCounter />
   </Provider>,
   document.getElementById("test")
 );
